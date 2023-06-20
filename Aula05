@@ -1,0 +1,104 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula05Condicoes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade;
+
+
+            Console.WriteLine("Bem-Vindo ao Conradito Auto");
+            Console.WriteLine("Para começar digite a sua idade: ");
+            idade = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Você tem {idade} anos!!");
+
+            if (idade>=18)
+            {
+
+                Console.WriteLine("Parabéns, você já pode tirar a sua carteira de motorista!!");
+
+            }
+            else
+            {
+                Console.WriteLine("Poxa!! Parece que você não tem idade o suficiente :(( Volte novamente daqui alguns anos!!");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+
+
+
+        
+
+
+
+
+
+
+        }
+
+        void Revisao() 
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            string nome = ("");
+            int ano;
+            string profissao;
+
+
+
+            Console.WriteLine("Bem-vindo ao cadastro de currículos \n");
+            Console.WriteLine($"Para começar, digite o seu primeiro nome: ");
+            nome = Console.ReadLine();
+            Console.WriteLine($"Digite o ano que voce nasceu: ");
+            ano = Int32.Parse(Console.ReadLine());
+            Console.WriteLine($"Digite sua profissão: ");
+            profissao = Console.ReadLine();
+            Console.WriteLine("\n Cadastro realizado com sucesso! \n");
+            Console.WriteLine($"Você se chama {nome} e tem {2023 - ano} anos");
+            Console.WriteLine($"Vagas para: {profissao}");
+            Console.ReadKey();
+
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+}
