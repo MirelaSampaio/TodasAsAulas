@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula06Atividade
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int mes;
+
+
+            Console.WriteLine("Bem-vindo ao Conradito Airlines, companhia aérea \n \n");
+            Console.WriteLine("COMPRE SUA PASSAGEM \n");
+            Console.WriteLine("Meses disponíveis: \n 8 - Agosto \n 9 - Setembro \n 10 - Outubro");
+            mes = int.Parse(Console.ReadLine());
+            if (mes == 8)
+            {
+                Console.WriteLine("");
+
+            }
+
+
+
+
+
+
+        }
+    }
+}
