@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula03Variaveis
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // A variável criador do tipo String recebe um valor chamado de Wendell.   
+            string criador = "Wendell";
+
+            int idade = 19;
+
+            float dinheiro = 2.50f;
+
+            float peso = 61.0f;
+
+            float altura = 1.73f;
+
+            float imc = peso / (altura * altura);
+            Console.WriteLine($"Seu IMC é {imc}");
+
+            int soma = 52 + 77;
+            Console.WriteLine($"O resultado é {soma}");
+
+
+            //Console.WriteLine("Meu nome é " + criador + " e eu tenho " + idade + " anos");
+            Console.WriteLine($"Meu nome é {criador} e eu tenho {idade} anos");
+            Console.WriteLine($"Na minha carteira eu tenho {dinheiro}");
+            Console.WriteLine("Minha idade é " + idade);
+
+            // Juntar um texto com outro é chamado de CONCATENAÇÃO
+            Console.WriteLine("Aula 03 Variáveis de " +criador );
+            Console.WriteLine("Programa criado por " +criador);
+            Console.WriteLine("Eu sou o " + criador);
+            Console.WriteLine("Lembrando que quem fez, foi o " + criador);
+            
+
+            Console.ReadLine();
+        }
+    }
+}
