@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula09EstoqueDeProdutos
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> produtos = new List<string> { "batatinhas", "pepsi"};
+            //Para começar uma lista com alguma coisa já dentro dela, ao invés de parenteses, use chaves.
+
+
+            Console.WriteLine("Seja bem-vindo ao sistema de estoque da Conradito Store");
+
+            while (true)
+            {
+
+                Console.WriteLine("Digite 1 para cadastrar ou 2 para listar:");
+                string resposta = Console.ReadLine();
+
+                if (resposta == "1")
+                {
+                    Console.WriteLine("Digite o nome do produto:");
+                    string produto = Console.ReadLine();
+                    produto = produto.ToUpper();
+                        //O comando produto = produto.ToUpper ou produto.ToLower faz um tratamento de caracteres.
+
+                    if (produtos.Contains(produto))
+                    {
+                        Console.WriteLine("Esse item já existe na lista.");
+                    }
+                    else
+                    {
+                        produtos.Add(produto);
+                        Console.WriteLine("O produto foi adicionado com sucesso!");
+
+                    }
+                }
+                else
+                {
+                    string texto = "";
+                    int contador = 0;
+                    while ( contador < produtos.Count )
+                    {
+                        string palavra = produtos[contador];
+
+                        string primeira_letra = palavra.Substring(0, 1);
+                        primeira_letra = primeira_letra.ToUpper();
+
+                        string segunda_parte = palavra.Substring(1, palavra.Length-1);
+
+
+                        string palavra_completa = primeira_letra + segunda_parte;
+
+
+                        // Console.WriteLine($"Nome do produto: {produtos[ contador ] }");
+                        texto += produtos[contador] + ", ";
+                        contador++;
+
+                    }
+                    // O texto.Lengh < 3 serve para verificar o quanto você pode contar dentro de um texto. Ex para pessoas q colocam letras ao invés de um nome. Ou para casos 
+                    // o texto.Replace serve para substituir uma palavra, ex substituir um palavrão por asteriscos (Merda = *****)
+                    // O texto.Substring serve para cortar uma parte do texto.
+
+                    // Você pode criar outra variável para guardar o comando texto.Substring, ou usar a própria variável texto para fazer isso. Exemplo abaixo:
+
+                    texto = texto.Substring(0, texto.Length - 2 );
+                    Console.WriteLine(texto);
+
+                }
+            }
+
+
+        }
+    }
+}
