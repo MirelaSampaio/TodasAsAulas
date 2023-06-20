@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula04Leitura
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome;
+            string nome2;
+            int idade;
+
+
+            Console.WriteLine("Digite o seu PRIMEIRO nome: ");
+            nome = Console.ReadLine();
+
+            Console.WriteLine("Digite seu SEGUNDO nome:");
+            nome2 = Console.ReadLine();
+
+
+            Console.WriteLine($"Seja Bem-Vindo {nome} {nome2}");
+            Console.WriteLine("Digite sua idade: ");
+            idade = Int32.Parse(Console.ReadLine());
+            Console.WriteLine($"Você tem {idade} anos!");
+
+            Console.ReadLine();
+          
+            
+
+
+
+        }
+
+
+
+
+        void Atividade()
+        {
+
+
+            float lanche = 8.00f;
+            float salsicha = 1.50f;
+            float hamburguer = 2.00f;
+            float requeijão = 1.50f;
+            float bacon = 2.00f;
+
+            float xtudo = 13.50f;
+            float cachorrinho = 12.50f;
+            int moda = 15;
+
+
+
+
+
+            Console.WriteLine("Bem-Vindo ao catálogo digital do Conradito Lanches");
+            Console.WriteLine("Confira os valores:");
+            Console.WriteLine($"X-Tudo: hamburguer, bacon e salsicha - R$ {lanche + hamburguer + bacon + salsicha} ");
+            Console.WriteLine($"Cachorro-quente cremoso: 2 salsichas e requeijão - R$ {lanche + salsicha + salsicha + requeijão}");
+            Console.WriteLine($"A moda da casa: salsicha, hamburguer, requeijao e bacon - R$ {lanche + salsicha + hamburguer + requeijão + bacon}");
+            Console.WriteLine("\n \n");
+            Console.WriteLine($"COMBO: X-Tudo + Cachorro-Quente Cremoso + A moda da casa - R$ {xtudo + cachorrinho + moda}");
+            Console.ReadLine();
+
+        }
+
+
+
+
+
+    }
+}
